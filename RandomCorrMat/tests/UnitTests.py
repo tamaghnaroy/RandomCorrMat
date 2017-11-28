@@ -1,12 +1,12 @@
 import unittest
 import numpy as np
 
-from .ConstantCorr import *
-from .Diagnostics import *
-from .RandomCorr import *
-from .RandomCorrMatEigen import *
-from .RandomCorrNear import *
-from .RandomPerturb import *
+from RandomCorrMat.RandomCorrMat.ConstantCorr import *
+from RandomCorrMat.RandomCorrMat.Diagnostics import *
+from RandomCorrMat.RandomCorrMat.RandomCorr import *
+from RandomCorrMat.RandomCorrMat.RandomCorrMatEigen import *
+from RandomCorrMat.RandomCorrMat.RandomCorrNear import *
+from RandomCorrMat.RandomCorrMat.RandomPerturb import *
 
 class TestRandCorr(unittest.TestCase):
     # test diagnostics functions
@@ -54,7 +54,7 @@ class TestRandCorr(unittest.TestCase):
         J = applyGivens(Q, 2, 3)
         self.assertAlmostEqual(Q[0,0], J[0,0], places=16)
         self.assertAlmostEqual(Q[1, 1], J[1, 1], places=16)
-        self.assertEqual(J[2,2], 1.0)
+        self.assertAlmostEqual(J[2,2], 1.0, places=14)
         self.assertAlmostEqual(np.trace(J), 4.0, places=10)
 
     def test_randcorrwitheigenvalue(self):

@@ -2,10 +2,7 @@
 # Generate a Perturbation of a given correlation
 # ------------------------------------------------------
 
-import unittest
 import numpy as np
-from math import copysign, hypot
-from scipy.optimize import fsolve
 from numpy import linalg as LA
 
 from .RandomCorrMatEigen import *
