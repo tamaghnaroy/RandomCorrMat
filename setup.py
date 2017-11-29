@@ -3,15 +3,21 @@ from os import path
 from sys import version
 from setuptools import setup
 
-here = path.abspath(path.dirname(__file__))
+# here = path.abspath(path.dirname(__file__))
 
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-      long_description = f.read()
+# with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+#      long_description = f.read()
+
+try:
+   import pypandoc
+   description = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+   description = ''
 
 setup(name='RandomCorrMat',
-      version='0.1',
-      description='package containing multiple methods to simulate correlation matrices',
-      long_description = long_description,
+      version='0.1.1',
+      description='Package containing multiple methods to simulate random correlation matrices',
+      long_description = description,
       url='https://github.com/tamaghnaroy/RandomCorrMat',
       author='Tamaghna Roy',
       author_email='tamaghna@gmail.com',
