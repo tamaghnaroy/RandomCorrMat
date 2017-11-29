@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+RandomCorrMat/ConstantCorr.py
+RandomCorrMat/Diagnostics.py
+RandomCorrMat/RandomCorr.py
+RandomCorrMat/RandomCorrMatEigen.py
+RandomCorrMat/RandomCorrNear.py
+RandomCorrMat/RandomPerturb.py
+RandomCorrMat/__init__.py
+RandomCorrMat.egg-info/PKG-INFO
+RandomCorrMat.egg-info/SOURCES.txt
+RandomCorrMat.egg-info/dependency_links.txt
+RandomCorrMat.egg-info/not-zip-safe
+RandomCorrMat.egg-info/requires.txt
+RandomCorrMat.egg-info/top_level.txt
