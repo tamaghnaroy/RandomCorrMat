@@ -59,9 +59,9 @@ if path.isfile(readme_md) :
 
 
 setup(name='RandomCorrMat',
-      version='0.1.4',
+      version='0.1.5',
       description=description,
-      long_description = long_description,
+      long_description = long_description.strip(),
       url='https://github.com/tamaghnaroy/RandomCorrMat',
       author='Tamaghna Roy',
       author_email='tamaghna@gmail.com',

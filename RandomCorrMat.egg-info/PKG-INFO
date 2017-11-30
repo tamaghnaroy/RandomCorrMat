@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: RandomCorrMat
-Version: 0.1.3
+Version: 0.1.4
 Summary: Package containing multiple methods to simulate random correlation matrices
 Home-page: https://github.com/tamaghnaroy/RandomCorrMat
 Author: Tamaghna Roy
