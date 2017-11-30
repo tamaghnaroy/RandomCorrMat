@@ -59,7 +59,7 @@ if path.isfile(readme_md) :
 
 
 setup(name='RandomCorrMat',
-      version='0.1.3',
+      version='0.1.4',
       description=description,
       long_description = long_description,
       url='https://github.com/tamaghnaroy/RandomCorrMat',
