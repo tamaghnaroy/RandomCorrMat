@@ -54,15 +54,15 @@ if path.isfile(readme_md) :
     if not path.isfile(description_rst):
         convert_md_to_rst(readme_md, description_rst)
 
-    with open(path.join(here, 'description.rst'), encoding='utf-8') as f:
+    with open(description_rst, encoding='utf-8') as f:
         long_description = f.read()
 
 
 setup(name='RandomCorrMat',
-      version='0.1.5',
+      version='0.1.18',
       description=description,
       long_description = long_description.strip(),
-      url='https://github.com/tamaghnaroy/RandomCorrMat',
+      url='https://gitub.com/tamaghnaroy/RandomCorrMat',
       author='Tamaghna Roy',
       author_email='tamaghna@gmail.com',
       license='MIT',
