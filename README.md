@@ -1,4 +1,4 @@
-# RandCorrMat
+# RandomCorrMat
 Implements several schemes to generate random correlation matrices, including
 checks to validate a given matrix to be a proper correlation matrix.
 
@@ -14,7 +14,7 @@ check for the following conditions in a given matrix -
 ```python
 import RandomCorrMat
     
-matrix_to_test = ....
+matrix_to_test = [[1 , 0.9 , -0.9], [0.9, 1, 0.25], [-0.9, 0.25, 1]]
     
 res = RandomCorrMat.isvalid_corr(matrix_to_test)
 res == True         # if the correlation is valid
@@ -41,11 +41,11 @@ import RandomCorrMat
 
     
 # Generate a constant correlation matrix
-RandomCorrMat.constantCorrMat(<size>, <const_value>)
+RandomCorrMat.constantCorrMat(size, cor_value)
     
      
 # Generate a Random correalation matrix
-RandomCorrMat.randCorr(<size>, <lower_limit>, <upper_limit>)
+RandomCorrMat.randCorr(size,lower_limit, upper_limit)
    
     
 # Generate a random correlation matrix with given eigenvalues
