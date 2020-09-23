@@ -8,7 +8,7 @@ import numpy as np
 
 def sgn(A):
     """
-    Utility function to return the sign of the matrix values, basically a longer version of np.sign() -- TODO
+    Utility function to return the sign of the matrix values, basically a longer version of np.sign()
 
     @param A: numpy nxn ndarray
     @return: sign of the array

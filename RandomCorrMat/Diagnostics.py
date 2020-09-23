@@ -50,3 +50,21 @@ def isvalid_corr(corrmat):
     @return: CorrDiagnostics object ---> evaluates to True if corrmat is valid and False otherwise, .cause gives the cause
     """
     return CorrDiagnostics(corrmat)
+
+def plot_histogram_off_diagonal(list_of_rand_corr_mat, print_cause=True):
+    if 'plt' not in globals():
+        import matplotlib.pyplot as plt
+    else:
+        plt = globals()['plt']
+
+    results = []
+    nt_valid = 0
+    for c in list_of_rand_corr_mat:
+        res = isvalid_corr(c)
+        if not res:
+            nt_valid += 1
+            if print_cause:
+                print(res.cause)
+        results.extend(list(c.ravel()))
+    plt.hist(results)
+    print('%s matrices are not valid' % nt_valid)

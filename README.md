@@ -44,10 +44,12 @@ import RandomCorrMat
 RandomCorrMat.constantCorrMat(size, cor_value)
     
      
-# Generate a Random correalation matrix
-RandomCorrMat.randCorr(size,lower_limit, upper_limit)
-   
-    
+# Generate a Random correalation matrix sampled uniformly from the space of corelation matrices
+RandomCorrMat.randCorrOnion(size)
+
+# Generate the Random correlation matrix, faster but no gaurantees
+RandomCorrMat.randCorr(size)
+
 # Generate a random correlation matrix with given eigenvalues
 e = numpy.r_[2, 1, 0.75, 0.25]
 corr_mat = RandomCorrMat.randCorrGivenEgienvalues(e)
