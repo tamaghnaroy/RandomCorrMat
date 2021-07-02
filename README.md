@@ -38,7 +38,9 @@ To generate random correlation matrix, there are several schemes:
 ###### Usages
 ```python
 import RandomCorrMat
-
+import numpy
+size=10
+cor_value=0.5
     
 # Generate a constant correlation matrix
 RandomCorrMat.constantCorrMat(size, cor_value)
